@@ -1,0 +1,23 @@
+form {
+    display: grid; 
+    max-width: 600px; 
+    gap: 20px;
+}
+input, select, input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+}
+.field{
+    display: block;
+}
+input[type=submit]{
+    background-color: darkolivegreen;
+    cursor: pointer;
+    padding: 16px 32px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}

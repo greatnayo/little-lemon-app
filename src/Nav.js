@@ -1,21 +1,26 @@
+import { Outlet, Link } from "react-router-dom";
+
 const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Menu</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/booking-page">Booking Page</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+      <Outlet />
+    </>
   );
 };
 
